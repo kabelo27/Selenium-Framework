@@ -13,13 +13,13 @@ public class Loginpage {
 	     private By usernameTextBox = By.id("Email");
 	     private By passwordTextBox = By.id("Password");
 	     private By loginButton = By.xpath("//*[@id=\"main\"]/div/section/div/div[2]/div[1]/div/form/div[3]/button");
+	     //private By Reptcha = By.className("cb-i");
 	
-//	 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(500));
+	// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(500));
 
   // driver.get("https://admin-demo.nopcommerce.com/login");
    
-  // String title = driver.getTitle();
-   
+  // String title = driver.getTitle(); [@id="AOzYg6"]/div/label/span[1]
    //System.out.println("This is the Title "+title);
    
    public Loginpage(WebDriver driver) {
@@ -41,6 +41,7 @@ public class Loginpage {
    driver.findElement(loginButton).click();
    }
 
-  
-
+ //  public void clickVerifyyouarehuman() {
+   //driver.findElement(Reptcha).click();
+//}
 }
